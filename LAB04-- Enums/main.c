@@ -21,8 +21,6 @@ Escape characters
 \?	3F	Question mark (used to avoid trigraphs)
 */
 
-
-
 enum color { red, yellow , blue , black , green };
 char  broild;
 
@@ -33,9 +31,9 @@ int main(void)
     printf("\n##########  Variable and Data Types  ########\n");
     printf("\n#############################################\n\n\n");
 
-enum color  my_color = black;
+    enum color  my_color = black;
 
-    broild ='T';
+    broild ='\n';
     printf(" value = %d\n", my_color);
 
     printf(" text= \"%s \" \a \n", &broild);
