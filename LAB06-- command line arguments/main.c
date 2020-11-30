@@ -2,6 +2,11 @@
 #include <stdio.h>
 
 
+/*
+argc:
+argv = number of argument
+*/
+
 int main (int argc , char *argv[])
 {
     int numberOfArguments =argc;
