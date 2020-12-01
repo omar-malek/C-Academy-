@@ -3,3 +3,12 @@
 	<stdio.h>
 	<stdlib.h>
 
+1606780386 source:d:\dev\c_academy\c-academy-\lab07-- bitwise operator\main.c
+	<stdio.h>
+	"stdint.h"
+	"stdbool.h"
+
+1606782632 source:d:\dev\c_academy\c-academy-\challenge--02- convert minut to years and days\main.c
+	<stdio.h>
+	<stdint.h>
+
