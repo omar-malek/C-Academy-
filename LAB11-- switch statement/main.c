@@ -8,7 +8,7 @@ int main(){
 
 enum Weekday{Monday,Tuesday,Wednesday, Thursday, Friday, Saturday, Sunday};
 
-enum Weekday today =Monday;
+enum Weekday today =Friday;
 
             switch (today)
             {

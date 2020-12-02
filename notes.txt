@@ -6,7 +6,12 @@ x= y>7 ? 25 : 50   means result set to 25 if y is greater than 7, or to 50 other
 
 
 many if else ==> use switch
- 
+
+
+for syntax:
+for (start condition; continuation condition; action_per_condition)
+		Loop statement;
+The condition can be multiple
 
 
 
