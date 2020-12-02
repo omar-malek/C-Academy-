@@ -16,3 +16,9 @@ The condition can be multiple
 
 
 
+While and For loop choos
+		-While loo is beter for logic controlled
+		- For loop is beter for counter control loop
+
+
+Break is often used to leave a loop when there are two seperate reasons to leave 
