@@ -15,16 +15,14 @@ int main(){
     srand((unsigned)time(&t));
 
     //get the random number
-
     randomNumber=rand()%21;
 
     printf(" \n This is a guessing game .");
-
     printf("\n I have  chosen a number between 0 and 20 , which you must guess .\n");
 
     for (NumberOfGuesses =5;NumberOfGuesses>0;--NumberOfGuesses)
     {
-        printf( "\n You have %d tr%s left",NumberOfGuesses,NumberOfGuesses=1?"y":"ies" );
+        printf( "\n You have %d tr%s left",NumberOfGuesses,NumberOfGuesses== 1? "y" :"ies" );
         printf("\n Enter a guess :  ");
         scanf("%d", &guess);
 
@@ -39,7 +37,9 @@ int main(){
         else if ( randomNumber  < guess)
             printf("Sorry , %d id wrong  My number is %s less  than that \n ",guess);
     }
-            printf("\n You have had five tries and failed ,.The number was %d \n , ",randomNumber);
+
+    printf("\n You have had five tries and failed ,.The number was %d \n , ",randomNumber);
+
 return 0 ;
 }
 
