@@ -1,4 +1,12 @@
+Ternary statement:
+tackes three operand
+Conditions ? expression1: expression2
+x= y>7 ? 25 : 50   means result set to 25 if y is greater than 7, or to 50 otherwise
 
+
+
+many if else ==> use switch
+ 
 
 
 
