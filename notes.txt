@@ -22,3 +22,15 @@ While and For loop choos
 
 
 Break is often used to leave a loop when there are two seperate reasons to leave 
+
+
+
+--Array 
+
+// multidimentional array
+int number[3][4]={
+					{10,20,30,40},
+					{10,20,30,40},
+					{10,20,30,40}
+				}
+					
