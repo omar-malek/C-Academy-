@@ -135,6 +135,20 @@ text ="a"
 		
 ## Understanding compiler error 
 	-   use option  -Wall  ---> compiler show every things 
+	- fix the fisrt error in order 
+	
+	commun compiler message: 
+	- "Variable undeclared "
+	- "implicit declaration of function"  == missing function prototype
+	- "control reaches the end of non-void function "
+		* when function has been defined as returning a result but no return statement has been included to return this result
+		* either the function is incorrectly defined or the statement is missing 
+	- "unused variable"
+		* remove teh declaration
+	-"undifined refernce to "
+		* when there is function invoked ine the code that has not been defined anywhere 
+		* compiler is telling  us that there is a refernce to a function with no definition 
+		* check with function is missing and make sure its definition is compiled 
 
 
 
