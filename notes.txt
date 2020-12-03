@@ -32,5 +32,39 @@ int number[3][4]={
 					{10,20,30,40},
 					{10,20,30,40},
 					{10,20,30,40}
-				}
+				};
 					
+you need three nested loop to process 3 dimetional array 
+
+## String 
+strchr()
+strstr() ---> most usuful 
+Tokenization a string 
+strtok()
+
+analuzing string :
+islower()
+isdigit()
+.......
+
+## Pointer
+
+use the asterisk to dereference the pointer 
+ *pNumber = 25 
+  int * pNumber ;
+  pNumber =&Variable;
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
