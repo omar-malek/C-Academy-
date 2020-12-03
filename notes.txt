@@ -175,11 +175,47 @@ struct date today
 
 we can declare variable in the same time
 
-struct date{
-int month;
-int day;
-int year;
-}today;
+			struct date{
+			int month;
+			int day;
+			int year;
+			}today;
+
+			- array of structure 
+
+			struct date myDate[10]
+
+			example of use 
+			myDate[1].month =8
+			
+initializing an array of of structure 
+
+struct date myDates[5]={{12,10,1985},
+						{12,30,1980},
+						{11,15,2005},
+						};
+						
+						
+netsted structure   
+			example :
+			
+			struct dateAndTime{
+				struct date sdate;
+				struct time stime;
+				};
+
+#structure and pointer 
+  we can't passe structure as argument we use pointer of structure 
+  strcut date *datePtr; // decalarion of structure pointer 
+  
+  datePtr =&todayDate;
+  (*datePtr).day=21;     // parentheses are required 
+  
+  special operator for deferencer
+  
+  (*x).y   <===> x->y
+
+
 
 		
 			
