@@ -150,7 +150,14 @@ text ="a"
 		* compiler is telling  us that there is a refernce to a function with no definition 
 		* check with function is missing and make sure its definition is compiled 
 
-
+	-error "conflicting type for "...""
+		* Two definitions of function prototype have been found 
+		* one is the prototype
+	
+##run time error
+		- Segementation fault 
+		- analyse the core file and call stack
+		
 
 		
 			
