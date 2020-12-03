@@ -157,7 +157,29 @@ text ="a"
 ##run time error
 		- Segementation fault 
 		- analyse the core file and call stack
-		
+
+
+
+
+
+##Structur 
+
+struct date{
+int month;
+int day;
+int year;
+};		
+
+/*Declaration of of variable */
+struct date today 
+
+we can declare variable in the same time
+
+struct date{
+int month;
+int day;
+int year;
+}today;
 
 		
 			
