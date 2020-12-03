@@ -162,6 +162,20 @@ text ="a"
 
 
 
+##Pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##Structur 
 
 struct date{
@@ -216,7 +230,11 @@ netsted structure
   (*x).y   <===> x->y
 
 
-
+#structure contain pointer
+		str intPtr{
+			int *p1;
+			int *p2;
+		}
 		
 			
 			
