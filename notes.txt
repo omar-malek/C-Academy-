@@ -89,7 +89,23 @@ Technique and tool :
 			- Show the flow of the excution 
 			- Can help to isolate the error 
 	    - Debugguer  : monitor the excution stop and restart , set breakpoint and watch variable 
-	-Log file : can be used for analysis , add "good" log statements to the code
+		-Log file : can be used for analysis , add "good" log statements to the code
+		- Monitoring the software: run time analysis of memory usage, network traffic, thread and object information
+		- exception handling helps a great deal to identify catastrophic errors,
+	
+		- Static analyzers: analyse teh source code for specific set of known problems
+			* Sementic checker, does not analyze syntax
+			* Can detect things like uninitialized variable, memory leaks, unereachable code, deadlocks, or race condition 
+		
+		-Test suite - run a set of comprehensive system end-to end test 
+		  - make test every time you need to build a release
+		
+			
+	
+	
+	
+	
+	
 	
 	
 
