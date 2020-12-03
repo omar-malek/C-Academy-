@@ -57,7 +57,7 @@ use the asterisk to dereference the pointer
  
   
 
-
+## debug techniques
 
 
 
