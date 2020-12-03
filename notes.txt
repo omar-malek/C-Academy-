@@ -120,6 +120,24 @@ Preveting Error:
 		* When making change, apply them incremetally ,add one change, test then thoroughly before starting teh next step
 		* Help to reduce teh possible source of bugs , limits problem set
 		
+
+
+call stack  :  genereted when application crash 
+
+
+-Commun  mistakes
+
+text ='a'
+		* single character is assigne to text 
+text ="a"
+		* a pointer to the character string "a" is assigned to the text 
+		
+		
+## Understanding compiler error 
+	-   use option  -Wall  ---> compiler show every things 
+
+
+
 		
 			
 			
