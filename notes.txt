@@ -100,6 +100,30 @@ Technique and tool :
 		-Test suite - run a set of comprehensive system end-to end test 
 		  - make test every time you need to build a release
 		
+		
+		-Debug the progarm after it has crashed 
+			* Analyze the call stack 
+			* Analyse memeory dump (core file)
+			
+Preveting Error:
+
+	- Write high quality code ( folow good design principle and good programming practices)
+	- unit test - automatically excuted when compiling 
+		* Help avoid regresion
+		* Find error in new code before it is delivered 
+		* TDD ( Test Driven devlopment)
+		
+	-Provide good documentation and proper planning( write down design on paper and utlize pseudocode)
+	
+	- Work in step and constantly test after each step
+		* Avoid too many change at once
+		* When making change, apply them incremetally ,add one change, test then thoroughly before starting teh next step
+		* Help to reduce teh possible source of bugs , limits problem set
+		
+		
+			
+			
+		
 			
 	
 	
