@@ -58,6 +58,40 @@ use the asterisk to dereference the pointer
   
 
 ## debug techniques
+commun problem 
+	- Logic error
+	- Syntax Error
+	- Memory Corruption
+	- Performance/scalability
+	- Lack of Cohesion  ( funsction do much)
+	- Tight Coupling ( dependecies) 
+	- 
+Debuging process: 
+	- understand the problem
+	- reproduce the problem
+		- intermittent 
+		
+	- Simplify the problem/ devide and conquer / isolate teh source
+		- Remove parts of the original test case
+		- Comment out the code / back out changes
+		- Turn a large program into a lot of small programs (unit testing)
+	- identify teh origine of the problem (in the code).
+		-USe debuggin too if necessary 
+	
+	- Slove the problem
+		-Experience and practice
+		- some include redesign and refactore of the code 
+	TEst TEst Test
+	
+Technique and tool :
+		- Tracing/using print statements 
+			- output the value of variable at certain point of the progam
+			- Show the flow of the excution 
+			- Can help to isolate the error 
+	    - Debugguer  : monitor the excution stop and restart , set breakpoint and watch variable 
+	-Log file : can be used for analysis , add "good" log statements to the code
+	
+	
 
 
 
