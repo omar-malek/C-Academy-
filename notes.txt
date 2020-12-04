@@ -176,6 +176,13 @@ advatage of pointer :
 	declare pointer as : int *pointer
 		- dangerous when not initialized
 		- We should always initialize a pointer a pointer when you declare it ====>   int *pnumber =NULL;
+	Accesing to pointer :
+	  we use the indirection operator , * , to acces the value of the variable pointed by a pointer 
+		  always referred to as the deference operator 
+		int number =15;
+		int *pointer=&number;
+		int result =0;
+		result =*pointer+5 //= 15+5
 
 
 
