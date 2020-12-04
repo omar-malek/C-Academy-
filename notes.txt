@@ -187,7 +187,20 @@ Advantage of pointer :
 		int *pointer=&number;
 		int result =0;
 		result =*pointer+5 //= 15+5
-	- %p represent format specific of pointer 
+	- %p represent format specific of pointer   print( pnumber  %p, pnumber) // display the adrees 
+	-  example: 
+			int number=0;
+			int  *pnumber =NULL; 
+			number  =10;
+			pnumber =&number;
+			print ("pnumber's value %p:"&number) // output the adress
+			print ("pnumber's value %p:"(void*)&pnumber) // output the adress
+		The pointer value is an adrees point to value 
+			
+			
+USE Of pointer-----------------------
+		- Assign adress to pointer 
+		- 
 
 
 
