@@ -162,8 +162,20 @@ text ="a"
 
 
 
-##Pointer
-
+##Pointer ###############################
+			-Pointer store memory adress and not data type 
+			- pointer is variable holde the adresse of variable 
+advatage of pointer :
+		- pointer allow us to get multiple values from the function 
+			* a function can retun 	only one value but by passing arguments as pointers we ca get more than one value from pointer 
+		- dynamic memeory use 
+			* we save memory from static ( compile time) declaration 
+		- pointer allow us to design and develop complex data structure like stack, queue, or linked list
+		- Pointer provide direct memory acces 
+			
+	declare pointer as : int *pointer
+		- dangerous when not initialized
+		- We should always initialize a pointer a pointer when you declare it ====>   int *pnumber =NULL;
 
 
 
