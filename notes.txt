@@ -42,7 +42,7 @@ strstr() ---> most usuful
 Tokenization a string 
 strtok()
 
-analuzing string :
+analyzing string :
 islower()
 isdigit()
 .......
@@ -76,7 +76,7 @@ Debuging process:
 		- Comment out the code / back out changes
 		- Turn a large program into a lot of small programs (unit testing)
 	- identify teh origine of the problem (in the code).
-		-USe debuggin too if necessary 
+		-Use debuggin tool if necessary 
 	
 	- Slove the problem
 		-Experience and practice
@@ -144,7 +144,7 @@ text ="a"
 		* when function has been defined as returning a result but no return statement has been included to return this result
 		* either the function is incorrectly defined or the statement is missing 
 	- "unused variable"
-		* remove teh declaration
+		* remove the declaration
 	-"undifined refernce to "
 		* when there is function invoked ine the code that has not been defined anywhere 
 		* compiler is telling  us that there is a refernce to a function with no definition 
@@ -165,24 +165,29 @@ text ="a"
 ##Pointer ###############################
 			-Pointer store memory adress and not data type 
 			- pointer is variable holde the adresse of variable 
-advatage of pointer :
+Advantage of pointer :
+		- With pointer dynamic memory can be created according to the programe use 
+		- we can save memeory from static ()
 		- pointer allow us to get multiple values from the function 
 			* a function can retun 	only one value but by passing arguments as pointers we ca get more than one value from pointer 
-		- dynamic memeory use 
+		- With pointer dynamic memory can be created according to the programe use  
 			* we save memory from static ( compile time) declaration 
 		- pointer allow us to design and develop complex data structure like stack, queue, or linked list
-		- Pointer provide direct memory acces 
+		- Pointer provide direct memory acces ( fast , efficient )  
 			
-	declare pointer as : int *pointer
+	Declare pointer as : int *pointer
 		- dangerous when not initialized
 		- We should always initialize a pointer a pointer when you declare it ====>   int *pnumber =NULL;
+	
+	
 	Accesing to pointer :
-	  we use the indirection operator , * , to acces the value of the variable pointed by a pointer 
+	  We use the indirection operator , * , to acces the value of the variable pointed by a pointer 
 		  always referred to as the deference operator 
 		int number =15;
 		int *pointer=&number;
 		int result =0;
 		result =*pointer+5 //= 15+5
+	- %p represent format specific of pointer 
 
 
 
