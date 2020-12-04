@@ -250,9 +250,10 @@ Dynamic allocation#################
 				- example:
 						int *pNumber =(int*)malloc(100);
 						for the portable code : int *pNumber =(int*)malloc(25*sizeof(int));// we defien the size of 
-					mélloc return a pointer of type pointer to void ,so you need to cast it 
-				
-		
+				- malloc return a pointer of type  void ,so you need to cast it 
+				- 
+			2-calloc 
+		guideline : avoid to allocate lot of of small amount of memeory
 
 
 ##Structur 

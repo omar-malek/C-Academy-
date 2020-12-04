@@ -1,0 +1,26 @@
+Automatic Variable :
+	- storage classes used to describe the features of variable/function 
+		* include teh scope , visibility and lif-time
+		* help to trace the existence of a particular variable during runtime of program
+	-The lifetime of variable is the time period during which variable exist in computer memeory 
+		* some exist briefly , some are repeatedly created and destroyed , and others exist for the entire excution of program
+		
+	- The scope of variable is where the variable can be referenced in program 
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+ 
