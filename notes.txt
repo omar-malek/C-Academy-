@@ -200,15 +200,42 @@ Advantage of pointer :
 			
 USE Of pointer-----------------------
 		- Assign adress to pointer 
+		- You can dereference teh pointer using * and giv ethe value stored in pointed to location 
+		- you can take pointer adress &
+		- you can perfome the pointer arithmetic (used to read array by increment an decrement)
 		- 
+		- when we use scanf() to input value we used & operator to obtain the adress of the variable 
+		- Testing for NULL : do not deference an uninistialized pointer 
 
+	Const and pointer 
+		- when you point to constant this mean 
+				*long value =999L
+				*const long *pvalue =&value // in this case you can't modify the value using pointer 
+		- To ensure that adrees stored in pointer cannot change:
+			    - int count=43;
+				   int* const pcount=&count ; //  never you can change teh adrees stireed in pointer 
+		    ex:
+			int item=25
+			const int* const pitem=&item;// evry things is constant
+	
+	Void pointer :	
+		- a pointer of type void* can contain the adress of data item on any type
+		   - void *ptr ===> you can assigned to any variable type 
 
+	array and pointer
+		- int values[100];//values is also pointer
+		  int *valuesPtr;
+		  valuesPtr=value /// value is array 
 
+	Pointer and arithemetic 
+		- to passe an array to function argument we use pointer ==> int array(int *array , const int n);
 
+    - in function we call by refernce
+	- in function we can retunr pointer 
 
-
-
-
+Dynamic allocation#################
+ 
+		- 
 
 
 
