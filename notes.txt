@@ -235,9 +235,24 @@ USE Of pointer-----------------------
 
 Dynamic allocation#################
  
-		- 
-
-
+		- fixd size   int dataArray[1000];
+		- using the dynamic memory allocation function you can store as you need 
+		- Heap and stack:
+			- Dynamic memory allocation reserves space in memeory area called heap
+			- the stack is another place where memory is allocated 
+				* function argument and local variable in function is stoed here 
+				* hen excution of the functin end , thes space allocated to store arguments and local variable is freed 
+			- The memory in the heap is controller by you ( when allocate you need ti free)
+			1-malloc:-----------------
+				- need stdlib.h
+				- you specify the number of the bytes of memory that want to allocated
+				- return the first adress of the fisrt bytes of memory that is allocated
+				- example:
+						int *pNumber =(int*)malloc(100);
+						for the portable code : int *pNumber =(int*)malloc(25*sizeof(int));// we defien the size of 
+					mélloc return a pointer of type pointer to void ,so you need to cast it 
+				
+		
 
 
 ##Structur 
