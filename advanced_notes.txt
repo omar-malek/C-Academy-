@@ -18,6 +18,9 @@ Automatic Variable :
 		
     - All local variable have automatic storage
 	- EXTERNAL : extern variable can be acces between two files
+	- static varibale should not decalte inside a strcuture
+		- if we need to define a globale varible whose value not to be accessed from another files we declare it as STATIC
+	
 	
 	
 	
