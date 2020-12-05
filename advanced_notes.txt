@@ -1,6 +1,6 @@
 Automatic Variable :
 	- storage classes used to describe the features of variable/function 
-		* include teh scope , visibility and lif-time
+		* include the scope , visibility and lif-time
 		* help to trace the existence of a particular variable during runtime of program
 	-The lifetime of variable is the time period during which variable exist in computer memeory 
 		* some exist briefly , some are repeatedly created and destroyed , and others exist for the entire excution of program	
@@ -21,9 +21,42 @@ Automatic Variable :
 	- static varibale should not decalte inside a strcuture
 		- if we need to define a globale varible whose value not to be accessed from another files we declare it as STATIC
 	
-	
-	
-	
+##HEAP and STACK
+		- There is 3 forms of memeory that you can use in program :
+			* static 
+			* stack
+			* heap 
+		Stack : is special region of memeory that store temporary variable 
+			* used to store variable that at created inside a function 
+			* easier to keep track of because the memory is only locally available in the function 
+			* managed by CPU 
+			* Grows and shrinks as variable are created destroyed inside function
+			* There is lilit of variable can be stored in the stack
+			* If a program tries to put too much information on the stack, stack overflow will ocuur 
+			* over flow can occurs in situations where recursion is incorrectly used 
+			* stack variable only exist while the function that created them is runnig 
+			* Local variable only
+			* variable cannot be resize
+			
+			
+		Heap : 
+			* opposite of stacks 
+			* a hierarchical data structure 
+			* The heap is a large pool of memeory that can be used dynamically 
+			* memory is not automaticaly managed 
+			* The heap managed by the programmer 
+			* The memory is acces by pointer
+			*  variable can acces globaly 
+			* no limit on memeory size
+			* programmer reponsible tomanage memeory 
+			* variable can be resize using realloc()
+			
+		The define #:
+			* Way to tell the compiler sonthings and run before the compiler 
+			* Ex: 	#define Yes 1
+					#define TWO_PI 2.0*3.14
+					#define NULL 0
+			* Help to make the programm more readly extendable and readable 	 
 	
 	
 	

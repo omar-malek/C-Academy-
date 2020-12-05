@@ -242,7 +242,7 @@ Dynamic allocation#################
 			- the stack is another place where memory is allocated 
 				* function argument and local variable in function is stoed here 
 				* hen excution of the functin end , thes space allocated to store arguments and local variable is freed 
-			- The memory in the heap is controller by you ( when allocate you need ti free)
+			- The memory in the heap is controller by you ( when allocate you need to free)
 			1-malloc:-----------------
 				- need stdlib.h
 				- you specify the number of the bytes of memory that want to allocated
