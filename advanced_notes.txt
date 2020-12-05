@@ -3,11 +3,21 @@ Automatic Variable :
 		* include teh scope , visibility and lif-time
 		* help to trace the existence of a particular variable during runtime of program
 	-The lifetime of variable is the time period during which variable exist in computer memeory 
-		* some exist briefly , some are repeatedly created and destroyed , and others exist for the entire excution of program
-		
+		* some exist briefly , some are repeatedly created and destroyed , and others exist for the entire excution of program	
 	- The scope of variable is where the variable can be referenced in program 
 	
+	- C provide four storage classes , indicate by their storage  calss specifiers
+		* auto 
+		* register 
+		* extern
+		* Static
 	
+	-The four storage class can be :
+		* automatic storage duration 
+		* static storage duration
+		
+    - All local variable have automatic storage
+	- EXTERNAL : extern variable can be acces between two files
 	
 	
 	
