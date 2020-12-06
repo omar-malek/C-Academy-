@@ -10,14 +10,11 @@ int main()
     long long n;
     int result=0;
 
-
-
     printf( "Enter a binary number : ");
     scanf("%lld",&n);
 
     result = convertBinaryTodecimal(n);
     printf("%lld in binary = %d in decimal",n , result );
-
 
     return 0 ;
 }
