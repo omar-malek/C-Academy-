@@ -56,12 +56,100 @@ Automatic Variable :
 			* Ex: 	#define Yes 1
 					#define TWO_PI 2.0*3.14
 					#define NULL 0
-			* Help to make the programm more readly extendable and readable 	 
+			* Help to make the programm more readly extendable and readable
+			* Deference between constant and define is 
+					#define Pi 3.14f
+					const float Pi =3.14  ( is better we d'nt need to verify the type)
+			* #define not handler by compiler 
 	
 	
-	
+		Typedef:
+			* Allow to create new type name
+			* Add readability 
+			* make program portable
+			* typedef counter  <==> #define counter
+			* typedef is handled by complier 
+			* typedef does not define a new type only new type name
+			* Best partice:
+				- use typedef for type that cobine arrays , pointer, or functions
+				- use typedef for portable type
+				- use typdef for casting :typedef int(*ptr_to_fun)(void)    char *p= ptr_to_fun;
+
+		
+		Variable Length Array:
+			* not used 
+			
+			
+			
+			
+#####Type qualifiers:
+			const , volatile, strict (c99)
+		
+		const :
+			* used for with variable whose value will not be change by teh program
+			* Compiler place the const in Read only memeory 
+			* example : 
+					const float  *pf //pf point to a constant value
+					float * const pt /// pt is const pointer  ( adress not chnage =)
+					const float * cont ptr ; // both constant ( pointer and variable);
+					float cosnt *ptr // same as const float *ptr
+					
+			*#define is preprocessor directive while cosnt is keyword 
+			* using const than used #define macro because const variable provide type checking by complier
+			
+		volatile:
+			* Tell the compiler explicity that the specified variable will change te value
+			* the program tell the compiler to supress various kinds of optimizations
+			* 3 types of variable should use volatile 
+				@ memeory-mappped peripheral registers
+				@ globale variable (no stack variable ) modified by intterup service routine 
+				@ global variable accesed by multible task
+			 
+					ex: 
+					volatil int loc1  /* loc is volatile locatiojn*/
+					volatile  * ploc /*ploc point to volatile location */
+			
+			
+Basic of C dat type : 
+				BIT				bool		1		0 to 1
+				byte			char		8		-128 to 127
+				word 		 	short int 	16		-32768	to 32767
+				long 			log int 			-2147483648	to 2147483674
+				
+			
+Negative number (signed)	: use two complment notation
+						  The leftmost bit represent the sign bit 
+							*	if 1 is Negativ
+							*	if 0 is Positive
+							*	The remain bits represent the value  
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 
 
+
+		
 
 
 
