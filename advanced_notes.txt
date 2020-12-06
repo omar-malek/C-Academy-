@@ -123,13 +123,42 @@ Negative number (signed)	: use two complment notation
 							*	if 0 is Positive
 							*	The remain bits represent the value  
 			
+Bit manipulation :
+						* Bit swap :
+									short int w1 =150;
+									short int w2 =61;
+									short temp =0
+									/*swap */
+									temp = w1;
+									w1   = w2;
+									w2=temp;
+									
+									//swap using bit
+									w1^=w2;
+									w2^=w1;
+									w1^=w2;
+						negativ ;
+							w1=2
+							result =~(w1) /// -2
 			
 			
 			
-			
-			
-			
-			
+Bitmask                 *Used to manipulate the bits of an integer
+						* checking if particular bit value are presentt or not 
+						*setting bit on or off
+						*apply mask to a value to set or read 
+						example : 
+								Turning bit On (Settig bits) using OR
+								
+								Toogling Bit using XOR
+								
+								Checking the value of bit 
+									if(flag==MASK)
+										puts(OK);
+						
+Bit operator to pack data :	
+						* Use the bitwise or bitfield
+						*
 			
 			
 			
