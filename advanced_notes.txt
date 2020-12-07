@@ -31,7 +31,7 @@ Automatic Variable :
 			* easier to keep track of because the memory is only locally available in the function 
 			* managed by CPU 
 			* Grows and shrinks as variable are created destroyed inside function
-			* There is lilit of variable can be stored in the stack
+			* There is limit of variable can be stored in the stack
 			* If a program tries to put too much information on the stack, stack overflow will ocuur 
 			* over flow can occurs in situations where recursion is incorrectly used 
 			* stack variable only exist while the function that created them is runnig 
@@ -46,7 +46,7 @@ Automatic Variable :
 			* memory is not automaticaly managed 
 			* The heap managed by the programmer 
 			* The memory is acces by pointer
-			*  variable can acces globaly 
+			* variable can acces globaly 
 			* no limit on memeory size
 			* programmer reponsible tomanage memeory 
 			* variable can be resize using realloc()
@@ -98,12 +98,13 @@ Automatic Variable :
 			* using const than used #define macro because const variable provide type checking by complier
 			
 		volatile:
-			* Tell the compiler explicity that the specified variable will change te value
+			* Tell the compiler explicity that the specified variable will change the value
 			* the program tell the compiler to supress various kinds of optimizations
+			* volatile is tell the  compiler that this value may change at any time
 			* 3 types of variable should use volatile 
 				@ memeory-mappped peripheral registers
 				@ globale variable (no stack variable ) modified by intterup service routine 
-				@ global variable accesed by multible task
+				@ global variable accesed by multiple task
 			 
 					ex: 
 					volatil int loc1  /* loc is volatile locatiojn*/
@@ -159,31 +160,75 @@ Bitmask                 *Used to manipulate the bits of an integer
 Bit operator to pack data :	
 						* Use the bitwise or bitfield
 						*
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 
 
 
-		
+Using bit field  	:
+					* 
+			
+			
+			
+			
+Union 	
 
 
 
 
 
+########Advenced concept of function :
+							
+		Variadic: 	*   Dealing with unknown number of arguments for a functions
+					*	Used of variadic function when we do not know the number of argument 
+					*	Varidic function contribute to the flexibility of the program that are devloping
+					*	Example is printf function
+					*	Two part:	
+							*Mnadatory argument 
+							*Optional argument
+							* example: printf - The mandatory argument ("The one number %d")
+											  - The optional comes second and could be different (nOneNumber)	
+					
+					*	va_list : need to access to optional parameter 
+					*	va_star : to connect argument list to argument pointer  		
+					* 	va_arg  : fetch teh current argument connected to the argument list 
+					*	va_end	: used in situation when would like to stop using are variable argument lis (cleanup)
+					*	va_copy	: used in situation for wich we need to save our current location 
+				
+				example:
+				step1: voidf1(int,...);//valide	
+				step2: creat va_list variable
+						
+			
+			
+	Recursion function : 		
+			
+			
+			
+			
 
+inline function : 
+				* implmented an ddeclared in header file 
+				* can replace the macro function
+				* usualy the compiler will substitute code of the function into caller
+				* The program no longer call that funtion, the compiler replaces every call to inline function with the code body of that function
+				* inline is internal linkage 
+				* inline is used only for efficienty and speed of program
+				
+
+The preprocessor 
+				* incldue guards : #ifndef  #define  ....#endif 
+				* #undef  to earlier #define definition 
+				* #paragma:
+							#pragama token_name
+
+
+
+
+
+The Macro 		* #define PX printf("x is %d.\n",x)
+				
+				Macro Vs function : 
+							- Macro is preprocessor this mean is processed before the program compile 
+							-
+								
 
  
