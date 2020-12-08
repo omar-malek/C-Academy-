@@ -228,7 +228,50 @@ The Macro 		* #define PX printf("x is %d.\n",x)
 				
 				Macro Vs function : 
 							- Macro is preprocessor this mean is processed before the program compile 
-							-
+							- trade of use is time and space
+							- The macro is faster than function 
+							- function take longer than inline code
+							- Macro inside nested loop is much beter candidate for speed improvments 
+							- when call function we alocate some data allocate stack frame
+							- macro insert code directly into program (textual substitution)
+							- macro produce inline code
+							- if we use same macro 20 times, we get 20 line of code inserted 
+							- if we use a function 20 times, we juste one copy of the function statments in programm
+							- function is type checking 
+							- macro not easy to debug 
+							- alternative of macro is inline function 
 								
 
- 
+Predefined Macro				__FILE__: the current file name ( string)
+							
+							__LINE__: line number of the current source code 
+							
+							__func__: the name of any function when placed inside a function of the current file 
+							
+							__DATE__: the date the source file was compiled ( string  Mmm dd YYY )
+							
+							__TIME__: the time teh souce file was compiled 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
