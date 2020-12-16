@@ -57,10 +57,15 @@ Automatic Variable :
 					#define TWO_PI 2.0*3.14
 					#define NULL 0
 			* Help to make the programm more readly extendable and readable
+			* eg : #define teh array size  array[defined_value] 
+			
 			* Deference between constant and define is 
 					#define Pi 3.14f
+					the define here is a symbol the is to  replaced in the code
+					* wehne we use define , PI is just sequence of character that replace all occurence in the code
 					const float Pi =3.14  ( is better we d'nt need to verify the type)
-			* #define not handler by compiler 
+			* #define not handler by compiler ode
+			
 	
 	
 		Typedef:
@@ -242,7 +247,7 @@ The Macro 		* #define PX printf("x is %d.\n",x)
 							- alternative of macro is inline function 
 								
 
-Predefined Macro				__FILE__: the current file name ( string)
+Predefined Macro			__FILE__: the current file name ( string)
 							
 							__LINE__: line number of the current source code 
 							
@@ -258,20 +263,231 @@ Predefined Macro				__FILE__: the current file name ( string)
 
 
 
+Profiling      			Dynamique program analysis that measure
+							* Space memeory
+							* Time complexity of program ( efficienty)
+							* Usage of particular instruction 
+							* The frequency and the duration of function calls
+							* profile help for optimizations
+							example :  tool gprof
 
 
 
 
 
+static analysis 		methode of debuging by automaticaly examining source code before a program is run 
+							* the analysis adress the the weakness in the source code that might lead to vulnurabilities
+							* analysis is often performed by an automated tool ( much more effective than code review)
+							
+						Static analysis vs Dynamic Analysis 
+							* static identifies defects before run program
+							* dynamic analysis idetifies defect after run program
+							
+
+
+advanced us eof pointer :
+						* used whne we need to change the value of the pointer passed to a function as the function arguments 
+							* simulate pass by reefernce 
+							*in c every things is passed by copy 
+							* if we pass a signe pointer in as argument we modify the local copie of pointer and not the origonal pointer in the calling scope
+							* with pointer to pointer we modify the original pointer 
+						* pointer of pointer 
+							int **var;
+							intx =**var;
+						Where we use double pointer :
+							- used when you need to change the value of the pointer passed to a function as function argument
+							- with pointer with pointer you can modify the original pointer 
+							-when we passe pointer as function argument we modify the copie only 
+							- when we use pointer of pointer we modify the original pointer and not the copy 
+										
 
 
 
 
+Function pointer   :	* use pointer to point to a function
+						* pointer to function can be :
+							- passed to functions
+							- return from function
+							- stored in arrays
+							- assigned to other function pointers
+						* A function pointer can be used directly as The function name when calling the function 
+						* Common Use Case:
+								- used as an argument to anothers function 
+								- menu driven system
+								- replace switch/if statament
+								- realize your own late-binding
+								- implment callbacks 
+						*pointer to a function store the adress for teh start of the function code
+								@ we need also to know the number and type of argument and the type of return 
+								@compiler can not deduce this information just from teh adress of the function
+						*function pointer hold and adress and must also define a prototype
+						
+						*pointer of function dereference to use the function 		
+								
+						ex : int(*pfunction)(int)	
+						*for each pointer of function you need to decalre a pointer 
+						*to set a function pointer to an existing specific function , you simply assign the name of the function to it 
+							example :
+											int(*pfunction)(int);
+											int loockup(int);
+											pfunction = lookup; or    pfunction=&loockup,
+						* writing a function name without a subsequent se of parentheses
+						
+						* invocation :
+							- int value =pfunction(5)
+							
+						*  we can hide the complexity of function by define it as type defect	
+							- example : 
+										typedef int (*funptr)();
+										the identifier funptr is synonym for the type of a pointer to function that take no argument and return an integer 
+										
 
 
+										
+Void pointer :      	
+						* void pointer hase no data type 
+						* to deferenciate teh void pointer you must to do cast
+						* example : 
+									void *vp;
+									int a =100;
+									vp=&a;
+									
+									to deferenciate we apply type caste after we deferenciate:  *(int*)vp;
+						* type casting changes type of vp temporary until the evaluation of the expresion , everywhere else in the prorgam
+							vp still void pointer 
+									
+						
+  
+  
+Standard Library 		* When c program is compiled, the compiler generate the object code (.o or .obj)
+						* after generate the object code teh compiler invokes teh liker
+						* linking is the process of collecting and combining multiple object files in order to create a single excutable file 
+						* one of the main task of linker is to make the code of library function (eg printf, scan().....etc) available for your program
+						* a linker can acomplish this task in two way :
+								- By copying the code of library function to your object code 
+								- by making some arrangments so that the complet code of library function is not copied , but made available at run time 
+						
+						* static linking is the result of teh linker making copy of all used library function to the excutable file
+						* Dynamique linking does not require the code to be copied , is done by just placing the name of library in the binary file 
+							*linking happen when the program run , when both binary file and the library file are in the memory
+						
+						STATIC LINKING:
+						* when you link application to another library at compile time , the library code is part of you application 
+						* the advantage is the speed
+						* create large binary files need more space 
+						* one linking you can't modify , you need to rebuild ( time cosuming) to fix bug
+						
+						DYNAMIC LINKING:
+						* Library is loaded in the memeory when teh program start 
+						
+						LIBRARY CONVENTION:
+						* Dynamic library are called lib somthing.so  (libthread.so)
+						* Static library  are called lib somtings.a    (libname.a)  equivalent .lib in windows 
+						*
+						
+						
+						
+ASSERT LIBRARY 		
+						*The assert library is designed to help with debugingusing for debuging programe
+							-defined in assert.h
+						* The assert() marcro enable you to insert tests of arbitrary expression in your program
+							- a run-time check
+						*takes as its argument an integer expresion
+							- the argument is relational or logical expresion 
+						*The program will be terminated with diagnostic message if a specified expresion is false during excution 
+							- error message is writen to the standard error stream(stderr)
+								- display the test that failed , the name of the file containing the test , and a line number 
+							- abort() function in invoked wich terminates the program
+						assertion are often used for critical condition in a program
+							* if certain condition are not met , disaster will occur 
+							*you would want to be sure that the program does not continue when error occurs
+						assertion are not meant as subtitute for error handling during normal runtime condition 
+							* use should be limited to finding logic error 
+							
+						* you can switch of ass but #define NDEBUG  before #include <assert.h>	
+  
+  
+  
+						Compile time assertion :
+							* can cause a program not to compile 
+							* enable error message during compilation 
+						
+  
+  
+  
+Data struccture: 		- Define a new data type
+						- Abstract definition of data type 
+		
 
+					ADT :
+						* Linked List
+						* Stacks
+						*Queue
+						*Binary trees
+					Operation add, insert , delete, retrn the sizer is Empty , dispaly 
+					
+					Stack :  push and add , pop and remove , peep, size 
+					Queue : enque , fio , dequeue peek , size 
+					binary tree : ansert , delete , search, size()
+					
+Linked list 		: abstract data struccture
+							- store a lot of different kind of data
+							- it is linear data structure
+							- it is sequence of data structure  wich are connected toghether via lonk/nodes
+							- there are different types of linked list 
+								* single linked list 
+									can only parsed in one -way 
+								*doubly linked list 
+									previous and next pointer , can be travarsed forward and backward 
+							- linked list are dynamic : le length of a list can increase or decrease as necessary
+							- a linked list can be used when the number of data elements to be represented in data structure is unpredictable
+							- a node/link can contain data of any type including others struct object
+							-linked list can be maintained in sorted order by inserting each new element at the proper point of list 
+							
+							- The link pointer in the last node of list is set to NULL to mark the end of the list 
+							
 
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   

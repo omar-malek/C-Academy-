@@ -1,3 +1,12 @@
+
+
+
+
+format specifier used when display variable as output 
+			%d  %f   %x   %p
+
+
+
 Ternary statement:
 tackes three operand
 Conditions ? expression1: expression2

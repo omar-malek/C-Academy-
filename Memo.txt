@@ -1,0 +1,69 @@
+
+
+
+#######volatile
+
+ 
+#######static
+
+#######malloc 
+ptr = (cast-type*) malloc(byte-size)
+
+
+
+
+#######structure 
+typedef struct
+{
+  __IO FLASH_ProcedureTypeDef ProcedureOnGoing; /*!< Internal variable to indicate which procedure is ongoing or not in IT context */
+  __IO uint32_t               NbPagesToErase;   /*!< Internal variable to save the remaining sectors to erase in IT context*/
+  __IO uint32_t               Address;          /*!< Internal variable to save address selected for program or erase */
+  __IO uint32_t               Page;             /*!< Internal variable to define the current page which is erasing */
+  HAL_LockTypeDef             Lock;             /*!< FLASH locking object                */
+  __IO uint32_t               ErrorCode;        /*!< FLASH error code
+                                                    This parameter can be a value of @ref FLASH_Error_Codes  */
+} FLASH_ProcessTypeDef;
+
+
+#######Pointer
+
+
+
+
+#######Bit manipulation 
+
+
+
+
+
+#######Function pointer 
+	decalere:
+	return_type   (*Pfunc)(arg1,arg2, ....)
+	
+	Invoqu
+	(*Pfunc)(arg_value, arg_value,....)
+
+
+void pointer :
+
+
+
+
+
+
+
+
+#######Linked List 
+
+	/* self-referential structure */
+  typedef struct node {
+	  char data;
+	  struct node * nextPtr;
+  } node_t
+  
+  typedef node_t *ListNodePtr;
+	  
+
+
+
+
